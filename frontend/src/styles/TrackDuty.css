@@ -1,0 +1,270 @@
+/* Track Duty Page Styles */
+
+.track-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.track-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.track-card h1 {
+  color: #2E5BF8;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.track-card h3 {
+  color: #333;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.duty-info {
+  background-color: #f5f5f5;
+  padding: 16px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+.duty-info p {
+  margin: 8px 0;
+  color: #333;
+}
+
+.duty-info strong {
+  color: #2E5BF8;
+}
+
+.duty-details {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.detail-value {
+  color: #666;
+  text-align: right;
+}
+
+.status-valid {
+  color: #00c851;
+  font-weight: 600;
+}
+
+.status-violation {
+  color: #ff4444;
+  font-weight: 600;
+}
+
+.consent-section {
+  background-color: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.consent-section h3 {
+  color: #333;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.consent-section p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.consent-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.consent-checkbox input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.consent-checkbox label {
+  margin: 0;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.tracking-active {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.tracking-active h3 {
+  color: #155724;
+  margin-bottom: 12px;
+}
+
+.current-location {
+  background: white;
+  padding: 16px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.current-location p {
+  color: #333;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.current-location strong {
+  color: #2E5BF8;
+}
+
+.location-valid {
+  color: #00c851;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.location-violation {
+  color: #ff4444;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.tracking-stats {
+  background: white;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.tracking-stats p {
+  color: #333;
+  margin: 0;
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #2E5BF8;
+  box-shadow: 0 0 0 3px rgba(46, 91, 248, 0.1);
+}
+
+.viewer-section {
+  background: #eef4ff;
+  padding: 16px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+.viewer-section h3 {
+  margin-top: 0;
+}
+
+.history-list {
+  background: #fff;
+  padding: 12px;
+  border-radius: 4px;
+  margin-top: 12px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.history-list h4 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+}
+
+.history-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.history-list li {
+  font-size: 13px;
+  padding: 2px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.error-container {
+  text-align: center;
+}
+
+.error-container h2 {
+  color: #2E5BF8;
+  margin-bottom: 16px;
+}
+
+.track-card .btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+}
+
+@media (max-width: 480px) {
+  .track-card {
+    padding: 24px;
+  }
+
+  .detail-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .detail-value {
+    text-align: left;
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "od-verification-backend",
+  "version": "1.0.0",
+  "description": "Staff OD Verification & Live Duty Tracking System - Backend",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "db:init": "node database/init.js",
+    "db:seed": "node database/seedUsers.js"
+  },
+  "keywords": ["od", "duty", "tracking", "location"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pg": "^8.8.0",
+    "bcrypt": "^5.1.0",
+    "jsonwebtoken": "^9.0.0",
+    "uuid": "^9.0.0",
+    "dotenv": "^16.0.3",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "nodemailer": "^6.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

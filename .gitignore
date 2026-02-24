@@ -1,0 +1,73 @@
+# OD System - .gitignore
+
+# Backend
+backend/node_modules/
+backend/.env
+backend/.env.local
+backend/.env.*.local
+backend/database.sqlite
+backend/database.db
+backend/dist/
+backend/build/
+backend/.DS_Store
+backend/*.log
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
+
+# Frontend
+frontend/node_modules/
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+frontend/build/
+frontend/dist/
+frontend/.DS_Store
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.cache/
+
+# IDE & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-project
+.sublime-workspace
+.project
+.classpath
+*.c9/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db
+.env.local
+*.pem
+*.key
+
+# Logs
+logs/
+*.log
+lerna-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Production
+dist/
+build/
+
+# Miscellaneous
+.cache/
+temp/
+tmp/
+*.backup
+*.temp
