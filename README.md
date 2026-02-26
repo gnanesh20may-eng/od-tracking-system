@@ -398,6 +398,42 @@ Response (200):
 {
   "message": "Duty retrieved successfully",
   "duty": {
+
+## Quick Start: run both services
+
+If your `.env` files are configured (see backend `.env.example` and frontend `.env.example`) you can start both backend and frontend from the project root.
+
+On Windows (PowerShell):
+```powershell
+# from project root
+npm run start:all
+```
+
+Or use the included batch file (works in standard Command Prompt):
+```powershell
+# from project root
+.\start-all.bat
+```
+
+The start scripts attempt to free common ports, start the backend and frontend using `npm start`, and open http://localhost:3000 in your browser.
+
+Required environment variables for email sending (backend `.env`):
+```
+SMTP_HOST=smtp.example.com
+SMTP_PORT=587
+SMTP_USER=you@example.com
+SMTP_PASS=your_smtp_password
+MAIL_FROM="OD System <no-reply@example.com>"
+```
+
+After setting database and SMTP env vars, initialize the database with:
+```powershell
+cd backend
+npm run db:init
+```
+
+Then run `npm run start:all` from the project root and generate a tracking link from the dashboard.
+
     "id": 1,
     "staff_id": 2,
     "duty_date": "2026-02-20",
